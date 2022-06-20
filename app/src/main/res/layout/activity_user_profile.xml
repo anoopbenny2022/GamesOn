@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D9ECFF"
+    android:backgroundTint="#D9ECFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="serif"
+        android:text="User Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/potrait" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="245dp">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="303dp"
+                android:layout_height="52dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:text="Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonName"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit"
+                android:backgroundTint="#317ECC"
+                android:drawableTint="#317ECC"
+                tools:layout_editor_absoluteX="340dp"
+                tools:layout_editor_absoluteY="286dp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="245dp">
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="303dp"
+                android:layout_height="52dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:text="Phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonPhone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit"
+                android:backgroundTint="#317ECC"
+                android:drawableTint="#317ECC"
+                tools:layout_editor_absoluteX="340dp"
+                tools:layout_editor_absoluteY="286dp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="245dp">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="303dp"
+                android:layout_height="52dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:text="Email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonEmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit"
+                android:backgroundTint="#317ECC"
+                android:drawableTint="#317ECC"
+                tools:layout_editor_absoluteX="340dp"
+                tools:layout_editor_absoluteY="286dp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="245dp">
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="303dp"
+                android:layout_height="52dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:paddingStart="10dp"
+                android:text="Address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonAdress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit"
+                tools:layout_editor_absoluteX="340dp"
+                android:backgroundTint="#317ECC"
+                android:drawableTint="#317ECC"
+                tools:layout_editor_absoluteY="286dp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="245dp">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="303dp"
+                android:layout_height="52dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:text="Password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonPassword"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit"
+                android:backgroundTint="#317ECC"
+                android:drawableTint="#317ECC"
+                tools:layout_editor_absoluteX="340dp"
+                tools:layout_editor_absoluteY="286dp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="296dp"
+            android:layout_height="66dp"
+            android:backgroundTint="#317ECC"
+            android:text="Update"
+            tools:layout_editor_absoluteX="340dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
