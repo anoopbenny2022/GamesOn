@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Game On</string>
+    <string name="select_date">Select Date:</string>
+    <string name="jan_01_2020">JAN 01 2020</string>
+    <string name="_100">$100</string>
+    <string name="your_total_amount">Your Total Amount</string>
+    <string name="pay">Pay</string>
+    <string name="button">Button</string>
+    <string name="book_now">Book Now</string>
 </resources>
