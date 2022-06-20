@@ -7,12 +7,36 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/splashtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="320dp"
+        android:text="GAME ON"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="150dp"
+        android:text="LET'S GET STARTED"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashtext" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="244dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="62dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/game_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
