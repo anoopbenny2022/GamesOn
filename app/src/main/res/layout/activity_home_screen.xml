@@ -4,6 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9ECFF"
+    android:backgroundTint="#D9ECFF"
     tools:context=".HomeScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="serif"
+        android:text="Game On"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="Categories"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/football"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/badminton"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/basketball"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cricket"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <Button
+        android:id="@+id/basketballBtn"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:text="Basketball"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <Button
+        android:id="@+id/cricketBtn"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:text="Cricket"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <Button
+        android:id="@+id/footballBtn"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:text="Football"
+        android:textSize="8sp"
+        app:rippleColor="#D4EDFF"
+        app:strokeColor="#9A3838"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <Button
+        android:id="@+id/badmintonBtn"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:text="Badminton"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="252dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
