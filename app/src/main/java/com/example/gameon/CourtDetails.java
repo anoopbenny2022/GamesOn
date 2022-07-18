@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class CourtDetails extends AppCompatActivity {
     private ImageView back;
-
+    private Button startbooking;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,5 +25,16 @@ public class CourtDetails extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        startbooking = findViewById(R.id.button);
+
+        startbooking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CourtDetails.this,BookingCourt.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,9 +32,21 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
     private Button dateButton;
     Button timeButton;
     int hour, minute;
+    Button cancel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /*cancel = findViewById(R.id.bt_pay2);
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(BookingCourt.this,CourtDetails.class);
+                startActivity(i);
+            }
+        });*/
+
         //For time picker
         timeButton = findViewById(R.id.timeButton);
 
@@ -66,6 +79,17 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
                                          } catch (JSONException e) {
                                              e.printStackTrace();
                                          }
+                                     }
+                                 }
+        );
+
+        cancel = findViewById(R.id.bt_pay2);
+        cancel.setOnClickListener(new View.OnClickListener() {
+                                     @Override
+                                     public void onClick(View view)
+                                     {
+                                         Intent i = new Intent(BookingCourt.this,CourtDetails.class);
+                                         startActivity(i);
                                      }
                                  }
         );
