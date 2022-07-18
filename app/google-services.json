@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "84055817377",
+    "project_id": "game-on-c9a29",
+    "storage_bucket": "game-on-c9a29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84055817377:android:62fe3de3e5cbfc0b7604e0",
+        "android_client_info": {
+          "package_name": "com.example.gameon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84055817377-cvl2quapotl1gnji9qf7v04g0jd294ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3rIplmTVNrF-YJTstSpXeWrgqzzUWa7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84055817377-cvl2quapotl1gnji9qf7v04g0jd294ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
