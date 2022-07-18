@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sumit virdi/AndroidStudioProjects/GamesOn/app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
+        <entry key="..\:/Users/sumit virdi/AndroidStudioProjects/GamesOn/app/src/main/res/layout/activity_sign_up_page.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/back_arrow_black.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_booking_court2.xml" value="0.1415719696969697" />
         <entry key="app/src/main/res/layout/activity_booking_screen.xml" value="0.23177083333333334" />
