@@ -14,22 +14,37 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="29dp"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="Footbal Courts"
-            android:textColor="#000"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            app:srcCompat="@drawable/icons8_left_arrow_50" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Football courts available"
-            android:textColor="#272727"
-            android:textSize="10dp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Footbal Courts"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Football courts available"
+                android:textColor="#272727"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -46,7 +61,8 @@
             app:cardCornerRadius="15dp">
 
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:id="@+id/court1"
+                android:layout_width="366dp"
                 android:layout_height="match_parent"
                 android:background="@color/blue"
                 android:padding="10dp">
@@ -90,6 +106,7 @@
             app:cardCornerRadius="15dp">
 
             <RelativeLayout
+                android:id="@+id/court2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FF9800"
@@ -133,6 +150,7 @@
             app:cardCornerRadius="15dp">
 
             <RelativeLayout
+                android:id="@+id/court3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/blue"
@@ -176,6 +194,7 @@
             app:cardCornerRadius="15dp">
 
             <RelativeLayout
+                android:id="@+id/court4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FF9800"
@@ -212,4 +231,5 @@
 
         </androidx.cardview.widget.CardView>
     </LinearLayout>
+
 </LinearLayout>
