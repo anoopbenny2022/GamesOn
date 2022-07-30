@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D9ECFF"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".BookingScreen">
@@ -109,7 +109,7 @@
                 android:id="@+id/court2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FF9800"
+                android:background="#2196F3"
                 android:padding="10dp">
 
                 <TextView
@@ -197,7 +197,7 @@
                 android:id="@+id/court4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FF9800"
+                android:background="#2196F3"
                 android:padding="10dp">
 
                 <TextView

@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#D9ECFF"
-    android:backgroundTint="#D9ECFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".UserProfile">
 
     <TextView
@@ -217,9 +217,9 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/edit"
-                tools:layout_editor_absoluteX="340dp"
                 android:backgroundTint="#317ECC"
                 android:drawableTint="#317ECC"
+                tools:layout_editor_absoluteX="340dp"
                 tools:layout_editor_absoluteY="286dp" />
 
 
