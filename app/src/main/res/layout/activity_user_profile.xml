@@ -63,7 +63,7 @@
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
-                android:layout_width="303dp"
+                android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:background="@drawable/rectangle"
                 android:ems="10"
@@ -79,16 +79,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/buttonName"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/edit"
-                android:backgroundTint="#317ECC"
-                android:drawableTint="#317ECC"
-                tools:layout_editor_absoluteX="340dp"
-                tools:layout_editor_absoluteY="286dp" />
 
 
         </LinearLayout>
@@ -107,7 +97,7 @@
 
             <EditText
                 android:id="@+id/editTextNumber"
-                android:layout_width="303dp"
+                android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:background="@drawable/rectangle"
                 android:ems="10"
@@ -123,16 +113,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/buttonPhone"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/edit"
-                android:backgroundTint="#317ECC"
-                android:drawableTint="#317ECC"
-                tools:layout_editor_absoluteX="340dp"
-                tools:layout_editor_absoluteY="286dp" />
 
 
         </LinearLayout>
@@ -151,7 +131,7 @@
 
             <EditText
                 android:id="@+id/editTextEmail"
-                android:layout_width="303dp"
+                android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:background="@drawable/rectangle"
                 android:ems="10"
@@ -167,16 +147,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/buttonEmail"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/edit"
-                android:backgroundTint="#317ECC"
-                android:drawableTint="#317ECC"
-                tools:layout_editor_absoluteX="340dp"
-                tools:layout_editor_absoluteY="286dp" />
 
 
         </LinearLayout>
@@ -195,7 +165,7 @@
 
             <EditText
                 android:id="@+id/editAddress"
-                android:layout_width="303dp"
+                android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:background="@drawable/rectangle"
                 android:ems="10"
@@ -211,16 +181,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/buttonAdress"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/edit"
-                android:backgroundTint="#317ECC"
-                android:drawableTint="#317ECC"
-                tools:layout_editor_absoluteX="340dp"
-                tools:layout_editor_absoluteY="286dp" />
 
 
         </LinearLayout>
@@ -239,7 +199,7 @@
 
             <EditText
                 android:id="@+id/editTextPassword"
-                android:layout_width="303dp"
+                android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:background="@drawable/rectangle"
                 android:ems="10"
@@ -255,16 +215,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/buttonPassword"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/edit"
-                android:backgroundTint="#317ECC"
-                android:drawableTint="#317ECC"
-                tools:layout_editor_absoluteX="340dp"
-                tools:layout_editor_absoluteY="286dp" />
 
 
         </LinearLayout>

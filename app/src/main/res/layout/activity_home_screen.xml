@@ -8,101 +8,6 @@
     android:backgroundTint="#FFFFFF"
     tools:context=".HomeScreen">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/badmintonBtn"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:srcCompat="@drawable/badminton" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/basketballBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:srcCompat="@drawable/basketball" />
-
-    <Button
-        android:id="@+id/basketballBtn"
-        android:layout_width="100dp"
-        android:layout_height="36dp"
-        android:backgroundTint="#317ECC"
-        android:text="Basketball"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/badmintonBtn"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/footballBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/basketballBtn"
-        app:srcCompat="@drawable/football" />
-
-    <Button
-        android:id="@+id/footballBtn"
-        android:layout_width="100dp"
-        android:layout_height="36dp"
-        android:backgroundTint="#317ECC"
-        android:text="Football"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/cricketBtn"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/cricketBtn"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/badmintonBtn"
-        app:srcCompat="@drawable/cricket" />
-
-    <Button
-        android:id="@+id/cricketBtn"
-        android:layout_width="100dp"
-        android:layout_height="36dp"
-        android:backgroundTint="#317ECC"
-        android:text="Cricket"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/footballBtn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-    <Button
-        android:id="@+id/badmintonBtn"
-        android:layout_width="100dp"
-        android:layout_height="36dp"
-        android:backgroundTint="#317ECC"
-        android:text="Badminton"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
-        app:layout_constraintEnd_toStartOf="@+id/basketballBtn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -144,7 +49,6 @@
         android:layout_width="406dp"
         android:layout_height="37dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -158,6 +62,18 @@
             android:text="Categories"
             android:textAlignment="center"
             android:textSize="16sp" />
+
     </LinearLayout>
+
+    <GridView
+        android:id="@+id/idGVCourses"
+        android:layout_width="373dp"
+        android:layout_height="470dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+    <!--Grid View for displaying our data from Firebase-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
