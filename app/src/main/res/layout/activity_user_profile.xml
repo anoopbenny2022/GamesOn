@@ -87,36 +87,6 @@
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
-        <LinearLayout
-            android:layout_width="357dp"
-            android:layout_height="56dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="245dp">
-
-            <EditText
-                android:id="@+id/editTextNumber"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:background="@drawable/rectangle"
-                android:ems="10"
-                android:inputType="number"
-                android:paddingStart="10dp"
-                android:text="Phone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.24"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="285dp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-
-        </LinearLayout>
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
@@ -154,36 +124,6 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
-
-        <LinearLayout
-            android:layout_width="357dp"
-            android:layout_height="56dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="245dp">
-
-            <EditText
-                android:id="@+id/editAddress"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:background="@drawable/rectangle"
-                android:ems="10"
-                android:inputType="textPostalAddress"
-                android:paddingStart="10dp"
-                android:text="Address"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.24"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="285dp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-
-        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"

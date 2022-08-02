@@ -6,7 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class UserProfile extends AppCompatActivity {
     private ImageView back;
@@ -17,6 +21,9 @@ public class UserProfile extends AppCompatActivity {
         setContentView(R.layout.activity_user_profile);
         back = findViewById(R.id.imageView3);
 
+        EditText email  = findViewById(R.id.editTextEmail);
+        EditText name  = findViewById(R.id.editTextTextPersonName);
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,5 +31,13 @@ public class UserProfile extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            email.setText(user.getEmail());
+            name.setText(user.getDisplayName());
+        } else {
+
+        }
+
     }
 }
