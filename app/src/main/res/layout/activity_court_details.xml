@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="24dp"
-        android:text="$200"
+        android:text="$100"
         android:textColor="#DD1E1E"
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/textView3"

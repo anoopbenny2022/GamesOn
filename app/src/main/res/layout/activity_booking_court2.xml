@@ -133,7 +133,7 @@
         android:layout_width="527dp"
         android:layout_height="61dp"
         android:layout_marginStart="16dp"
-        android:text="Newman Court, London"
+        android:text="Booking Court"
         android:textColor="#040303"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"

@@ -23,7 +23,7 @@
             android:name=".CourtDetails"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeScreen"
             android:exported="false" />
         <activity
             android:name=".BookingCourt"
@@ -38,7 +38,7 @@
             android:name=".LoginScreen"
             android:exported="false" />
         <activity
-            android:name=".HomeScreen"
+            android:name=".MainActivity"
             android:exported="true">
 
             <intent-filter>
