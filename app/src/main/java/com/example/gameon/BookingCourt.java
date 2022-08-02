@@ -1,8 +1,5 @@
 package com.example.gameon;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -13,17 +10,17 @@ import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.razorpay.Checkout;
 import com.razorpay.PaymentResultListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import android.widget.Button;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-import java.util.TimeZone;
 
 public class BookingCourt extends AppCompatActivity implements PaymentResultListener {
 
@@ -33,6 +30,9 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
     Button timeButton;
     int hour, minute;
     Button cancel;
+    String name;
+    String state;
+    String about;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +46,9 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
                 startActivity(i);
             }
         });*/
-
+        name = getIntent().getStringExtra("Name");
+        state = getIntent().getStringExtra("State");
+        about = getIntent().getStringExtra("About");
         //For time picker
         timeButton = findViewById(R.id.timeButton);
 
@@ -89,6 +91,9 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
                                      public void onClick(View view)
                                      {
                                          Intent i = new Intent(BookingCourt.this,CourtDetails.class);
+                                         i.putExtra("Name",name);
+                                         i.putExtra("About", about);
+                                         i.putExtra("State", state);
                                          startActivity(i);
                                      }
                                  }
