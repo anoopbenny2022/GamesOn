@@ -62,7 +62,7 @@
 
             <RelativeLayout
                 android:id="@+id/court1"
-                android:layout_width="366dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/blue"
                 android:padding="10dp">
