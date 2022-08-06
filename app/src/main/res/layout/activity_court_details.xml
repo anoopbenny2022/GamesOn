@@ -149,9 +149,9 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="396dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="12dp"
+        android:layout_width="385dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="28dp"
         android:text="Newman Court measurements for an 11-a-side pitch are identical, and those figures are used across the world's professional football leagues. The dimensions must be between 100 and 130 yards (90 and 120 metres) long and 50 and 100 yards (45 and 90 metres) broad."
         android:textColor="#090808"
