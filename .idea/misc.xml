@@ -11,6 +11,8 @@
         <entry key="app/src/main/res/layout/activity_login_screen.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_sign_up_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/booking_screen_gv_item.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/logout_confirmation_popup.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>

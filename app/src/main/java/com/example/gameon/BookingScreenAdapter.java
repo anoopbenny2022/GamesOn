@@ -56,11 +56,11 @@ public class BookingScreenAdapter extends ArrayAdapter<BookingScreenDataModel> {
             public void onClick(View v) {
                 // on the item click on our list view.
                 // we are displaying a toast message.
-                //Toast.makeText(getContext(), "Item clicked is : " + dataModal.getName(), Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getContext(),CourtDetails.class);
                 i.putExtra("Name", dataModal.getName());
                 i.putExtra("About", dataModal.getAbout());
                 i.putExtra("State", dataModal.getState());
+                i.putExtra("Price", dataModal.getPrice());
                 getContext().startActivity(i);
 
 

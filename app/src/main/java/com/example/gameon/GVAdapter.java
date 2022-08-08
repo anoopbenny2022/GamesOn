@@ -42,7 +42,6 @@ public class GVAdapter extends ArrayAdapter<DataModal> {
         // initializing our UI components of list view item.
         Button nameTV = listitemView.findViewById(R.id.idTVtext);
         ImageView courtIV = listitemView.findViewById(R.id.idIVimage);
-
         // after initializing our items we are
         // setting data to our view.
         // below line is use to set data to our text view.
@@ -55,6 +54,20 @@ public class GVAdapter extends ArrayAdapter<DataModal> {
         // below line is use to add item
         // click listener for our item of list view.
         listitemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // on the item click on our list view.
+                // we are displaying a toast message.
+                //Toast.makeText(getContext(), "Item clicked is : " + dataModal.getName(), Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getContext(),BookingScreen.class);
+                i.putExtra("extra", nameTV.getText());
+                getContext().startActivity(i);
+
+
+            }
+        });
+
+        nameTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // on the item click on our list view.

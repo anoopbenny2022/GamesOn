@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -27,16 +28,18 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
     Button btPay;
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
+    TextView priceText;
     Button timeButton;
     int hour, minute;
     Button cancel;
     String name;
     String state;
     String about;
+    String price;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_booking_court2);
         /*cancel = findViewById(R.id.bt_pay2);
 
         cancel.setOnClickListener(new View.OnClickListener() {
@@ -49,17 +52,21 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
         name = getIntent().getStringExtra("Name");
         state = getIntent().getStringExtra("State");
         about = getIntent().getStringExtra("About");
+        price = getIntent().getStringExtra("Price");
         //For time picker
         timeButton = findViewById(R.id.timeButton);
-
+        priceText = findViewById(R.id.textView4);
+        TextView courtName = findViewById(R.id.textView6);
+        courtName.setText(name);
         // For date picker
-        setContentView(R.layout.activity_booking_court2);
         initDatePicker();
         dateButton = findViewById(R.id.datePickerButton);
         dateButton.setText(getTodaysDate());
+        priceText.setText(price);
+
         // for razor pay
         btPay = findViewById(R.id.bt_pay);
-        String sAmount="100";
+        String sAmount=price.replace("$","");
         int amount=Math.round(Float.parseFloat(sAmount)*100);
         btPay.setOnClickListener(new View.OnClickListener() {
                                      @Override
@@ -94,6 +101,7 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
                                          i.putExtra("Name",name);
                                          i.putExtra("About", about);
                                          i.putExtra("State", state);
+                                         i.putExtra("Price", price);
                                          startActivity(i);
                                      }
                                  }

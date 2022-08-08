@@ -1,7 +1,5 @@
 package com.example.gameon;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -10,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -84,7 +84,7 @@ public class LoginScreen extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(LoginScreen.this,
-                            "Please Check Your login Credentials",
+                            "Please check your login credentials",
                             Toast.LENGTH_SHORT).show();
                 }
 
