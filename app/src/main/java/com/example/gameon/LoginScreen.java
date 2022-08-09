@@ -2,15 +2,24 @@ package com.example.gameon;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginScreen extends AppCompatActivity {
@@ -25,7 +34,45 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
         login = findViewById(R.id.button2);
+        EditText inputEmail = findViewById(R.id.editTextTextEmailAddress);
+        EditText password_view= findViewById(R.id.editTextTextPassword);
+        TextView forgot_password_view =findViewById(R.id.textView9) ;
+        mAuth=FirebaseAuth.getInstance();
+        forgot_password_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                String email = inputEmail.getText().toString().trim();
+                /*FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                   // Log.d(LoginScreen.this, "Email sent.");
+                                    Toast.makeText(LoginScreen.this, "Email sent successfully", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+
+
+                        });*/
+                 if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                //progressBar.setVisibility(View.VISIBLE);
+
+                mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginScreen.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(LoginScreen.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                        }
+                    }});
+            }
+        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +80,28 @@ public class LoginScreen extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Switch swi = findViewById(R.id.switch2);
+        swi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(!isChecked){
+
+                    // show password
+                    password_view.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+                    Log.i("checker", "true");
+                }
+
+                else{
+                    Log.i("checker", "false");
+
+                    // hide password
+                    password_view.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
+
+            }
+        });
         signup = findViewById(R.id.textView2);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
