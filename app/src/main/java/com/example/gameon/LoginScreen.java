@@ -1,5 +1,7 @@
 package com.example.gameon;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -9,13 +11,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginScreen extends AppCompatActivity {
     private Button login;
     private TextView signup;
+    private TextView frgtpass;
 
     private EditText email_id, pass_word;
     FirebaseAuth mAuth;
@@ -39,6 +40,16 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(LoginScreen.this,SignUpPage.class);
+                startActivity(i);
+            }
+        });
+
+
+        frgtpass = findViewById(R.id.textView9);
+        frgtpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginScreen.this,ForgotPassword.class);
                 startActivity(i);
             }
         });
@@ -84,7 +95,7 @@ public class LoginScreen extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(LoginScreen.this,
-                            "Please check your login credentials",
+                            "Please Check Your login Credentials",
                             Toast.LENGTH_SHORT).show();
                 }
 
