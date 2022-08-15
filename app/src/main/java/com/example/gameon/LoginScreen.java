@@ -1,15 +1,20 @@
 package com.example.gameon;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -101,7 +106,29 @@ public class LoginScreen extends AppCompatActivity {
 
             });
         });
+        EditText password_view= findViewById(R.id.editTextTextPassword);
+        Switch swi = findViewById(R.id.switch2);
+        swi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(!isChecked){
+
+                    // show password
+                    password_view.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+                    Log.i("checker", "true");
+                }
+
+                else{
+                    Log.i("checker", "false");
+
+                    // hide password
+                    password_view.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
+
+            }
+        });
 
     }
 }

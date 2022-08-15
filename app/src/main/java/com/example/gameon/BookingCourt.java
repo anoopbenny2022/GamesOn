@@ -119,7 +119,7 @@ public class BookingCourt extends AppCompatActivity implements PaymentResultList
 
     @Override
     public void onPaymentError(int i, String s) {
-        Toast.makeText(getApplicationContext(),"Unable process the payment please try again",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Unable to process payment. Please try again",Toast.LENGTH_SHORT).show();
 
     }
 

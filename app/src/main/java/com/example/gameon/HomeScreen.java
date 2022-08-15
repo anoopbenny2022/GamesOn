@@ -96,7 +96,11 @@ public class HomeScreen extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                   Intent i = new Intent(HomeScreen.this,LoginScreen.class);
-                startActivity(i);
+                        Toast.makeText(HomeScreen.this,
+                                "Logged out successfully",
+                                Toast.LENGTH_SHORT).show();
+                  startActivity(i);
+
                     }
                 });
                 cancel.setOnTouchListener(new View.OnTouchListener() {
