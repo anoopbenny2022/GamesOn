@@ -8,13 +8,16 @@
         <entry key="app/src/main/res/layout/activity_booking_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_court_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.2704544067382812" />
+        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login_screen.xml" value="0.21527709960937502" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1896551724137931" />
         <entry key="app/src/main/res/layout/activity_sign_up_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/booking_screen_gv_item.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/game_menu.xml" value="0.30885416666666665" />
         <entry key="app/src/main/res/layout/logout_confirmation_popup.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/menu.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.30885416666666665" />
       </map>
     </option>
   </component>

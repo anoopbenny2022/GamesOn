@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
     tools:context=".CourtDetails">
@@ -153,9 +154,9 @@
         android:layout_height="108dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="28dp"
+        android:scrollbars="vertical"
         android:text="Newman Court measurements for an 11-a-side pitch are identical, and those figures are used across the world's professional football leagues. The dimensions must be between 100 and 130 yards (90 and 120 metres) long and 50 and 100 yards (45 and 90 metres) broad."
         android:textColor="#090808"
-        android:scrollbars = "vertical"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
