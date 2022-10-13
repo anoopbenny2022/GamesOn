@@ -160,8 +160,8 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_width="62dp"
+            android:layout_height="18dp"
             android:layout_weight="1" />
 
         <Button
@@ -170,6 +170,15 @@
             android:layout_height="66dp"
             android:backgroundTint="#317ECC"
             android:text="Update"
+            tools:layout_editor_absoluteX="340dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <Button
+            android:id="@+id/buttonFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:backgroundTint="#317ECC"
+            android:text="Feedback"
             tools:layout_editor_absoluteX="340dp"
             tools:layout_editor_absoluteY="286dp" />
 
