@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "37057676741",
-    "project_id": "game-on-database",
-    "storage_bucket": "game-on-database.appspot.com"
+    "project_number": "84055817377",
+    "firebase_url": "https://game-on-c9a29-default-rtdb.firebaseio.com",
+    "project_id": "game-on-c9a29",
+    "storage_bucket": "game-on-c9a29.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:37057676741:android:11e62357f68a3fb44f37ac",
+        "mobilesdk_app_id": "1:84055817377:android:38cec87adaf4e2fa7604e0",
         "android_client_info": {
           "package_name": "mdev.project.gameon"
         }
       },
       "oauth_client": [
         {
-          "client_id": "37057676741-na6sliqeoer9aqfuq16o3pvun1ndooa2.apps.googleusercontent.com",
+          "client_id": "84055817377-cvl2quapotl1gnji9qf7v04g0jd294ha.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAKmUhgG0hzXEsnvbxt04R4UHjvJlTLCf8"
+          "current_key": "AIzaSyB3rIplmTVNrF-YJTstSpXeWrgqzzUWa7I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "37057676741-na6sliqeoer9aqfuq16o3pvun1ndooa2.apps.googleusercontent.com",
+              "client_id": "84055817377-cvl2quapotl1gnji9qf7v04g0jd294ha.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
