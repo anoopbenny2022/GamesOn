@@ -1,4 +1,4 @@
-package com.example.gameon;
+package mdev.project.gameon;
 
 import org.junit.Test;
 

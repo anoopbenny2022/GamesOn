@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
-    tools:context=".FeedbackForm">
+    tools:context="mdev.project.gameon.FeedbackForm">
 
 
     <ScrollView android:layout_height="match_parent" android:layout_width="match_parent"

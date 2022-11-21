@@ -1,4 +1,4 @@
-package com.example.gameon;
+package mdev.project.gameon;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;

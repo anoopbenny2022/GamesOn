@@ -1,4 +1,4 @@
-package com.example.gameon;
+package mdev.project.gameon;
 
 public class DataModal {
 

@@ -1,4 +1,4 @@
-package com.example.gameon;
+package mdev.project.gameon;
 
 import android.content.Context;
 import android.content.Intent;
