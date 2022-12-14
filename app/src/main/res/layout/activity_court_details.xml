@@ -7,7 +7,7 @@
     android:layout_margin="10dp"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
-    tools:context="mdev.project.gameon.CourtDetails">
+    tools:context="portfolio.project.gameon.CourtDetails">
 
     <ImageView
         android:id="@+id/imageView8"

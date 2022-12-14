@@ -1,4 +1,4 @@
-package mdev.project.gameon;
+package portfolio.project.gameon;
 
 import android.content.Intent;
 import android.os.Bundle;

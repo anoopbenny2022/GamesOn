@@ -1,4 +1,4 @@
-package mdev.project.gameon;
+package portfolio.project.gameon;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+
 
 public class FeedbackForm extends AppCompatActivity {
     public Button submit;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
-    tools:context="mdev.project.gameon.SignUpPage">
+    tools:context="portfolio.project.gameon.SignUpPage">
 
     <TextView
         android:id="@+id/textView"

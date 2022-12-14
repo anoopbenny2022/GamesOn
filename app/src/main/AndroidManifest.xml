@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="mdev.project.gameon">
+    package="portfolio.project.gameon">
     <!-- Permissions for internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -17,34 +17,34 @@
         android:theme="@style/Theme.GameOn"
         tools:targetApi="31">
         <activity
-            android:name="mdev.project.gameon.FeedbackForm"
+            android:name="portfolio.project.gameon.FeedbackForm"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.ForgotPassword"
+            android:name="portfolio.project.gameon.ForgotPassword"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.BookingScreen"
+            android:name="portfolio.project.gameon.BookingScreen"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.CourtDetails"
+            android:name="portfolio.project.gameon.CourtDetails"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.HomeScreen"
+            android:name="portfolio.project.gameon.HomeScreen"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.BookingCourt"
+            android:name="portfolio.project.gameon.BookingCourt"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.SignUpPage"
+            android:name="portfolio.project.gameon.SignUpPage"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.UserProfile"
+            android:name="portfolio.project.gameon.UserProfile"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.LoginScreen"
+            android:name="portfolio.project.gameon.LoginScreen"
             android:exported="false" />
         <activity
-            android:name="mdev.project.gameon.MainActivity"
+            android:name="portfolio.project.gameon.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

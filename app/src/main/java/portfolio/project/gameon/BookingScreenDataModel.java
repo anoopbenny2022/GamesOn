@@ -1,4 +1,4 @@
-package mdev.project.gameon;
+package portfolio.project.gameon;
 
 public class BookingScreenDataModel
 {

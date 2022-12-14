@@ -1,4 +1,4 @@
-package mdev.project.gameon;
+package portfolio.project.gameon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
 
 public class UserProfile extends AppCompatActivity {
     private ImageView back;

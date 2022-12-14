@@ -1,4 +1,4 @@
-package mdev.project.gameon;
+package portfolio.project.gameon;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,8 @@ import androidx.annotation.Nullable;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+
 
 public class GVAdapter extends ArrayAdapter<DataModal> {
 

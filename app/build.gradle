@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "mdev.project.gameon"
+        applicationId "portfolio.project.gameon"
         minSdk 29
         targetSdk 32
         versionCode 1

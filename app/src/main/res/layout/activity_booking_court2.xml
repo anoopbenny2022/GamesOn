@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
     android:textAlignment="center"
-    tools:context="mdev.project.gameon.BookingCourt">
+    tools:context="portfolio.project.gameon.BookingCourt">
 
     <Button
         android:id="@+id/bt_pay2"
